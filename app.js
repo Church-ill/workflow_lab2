@@ -3,6 +3,7 @@
 var template = Handlebars.compile($('#data-loader').html());
 
 $(document).ready(function() {
+
   var loadTemplate = function(error, data){
    if (error) {
      console.log(error);
