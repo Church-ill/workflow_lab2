@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="assets/handlebars-v3.0.3.js"></script>
-  <script type="text/javascript" src="app.js"></script>
   <script type="text/javascript" src="api.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 
 </head>
 <body>
@@ -30,7 +30,7 @@
 
             <tbody id='git-table'>
               <script id="data-loader" type="text/x-handlebars-template">
-                {{#each row}}
+                {{#each user}}
               <tr>
                 <td>{{name}}</td>
                 <td>{{username}}</td>
