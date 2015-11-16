@@ -1,0 +1,50 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Church-ill App</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/handlebars-v3.0.3.js"></script>
+
+</head>
+<body>
+  <h1>Church-ill's App</h1>
+  <p>
+      <button type="submit" class="load-btn">Load Data</button>
+        <div class="table-responsive">
+          <table class="table table-striped">
+
+            <thead>
+                <th>name</th>
+                <th>Username</th>
+                <th>email</th>
+                <th>address</th>
+
+              </tr>
+            </thead>
+
+            <tbody id='git-table'>
+              <script id="data-loader" type="text/x-handlebars-template">
+                {{#each row}}
+              <tr>
+                <td>{{name}}</td>
+                <td>{{username}}</td>
+                <td>{{email}}</td>
+                <td>{{address}}</td>
+
+              </tr>
+              {{/each}}
+              </script>
+            </tbody>
+
+          </table>
+        </div>
+
+  </p>
+
+
+</body>
+</html>
